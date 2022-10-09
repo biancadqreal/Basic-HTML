@@ -1,12 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html> <!--Avisa ao navegador que o tipo de documento é html-->
+<html lang="pt-br"><!--Conteúdo do HTML em português-->
+
+<head><!--Cabeça do html-->
+    <!--meta tags p baixo-->
+    <meta charset="UTF-8"> <!--Caracteres compatíveis com portugues-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <!--viewport = tela q se adapta ao cliente em escala 1.0-->
+    <meta name="description" content="Esse é o meu primeiro site!"> <!--Descrição do site-->
+    <meta name="keywords" content="programaçao, html, css, javascript"><!--Palavras chaves para busca-->
+    <meta name="author" content = "Bianca Garcia"> <!--Registra quem escreveu o site-->
+    <title>Primeiro Site</title> <!--Título-->
     
+</head>
+<body><!--Corpo do html-->
+    <hr>
+    <a href="https://www.youtube.com/watch?v=nPEpaft1y1k" target="_blank">Ir para o aulão</a>&nbsp;<!--a href cria link, &nbsp cria espaço entre hrefs-->
+    <!--Target blank abre o site em outra guia, LINK ABSOLUTO-->
+    <a href = "sobre.html" target="meu-iframe">Sobre nós</a>&nbsp;<!--Link relativo, ou seja dentro do site-->
+    <a href="formularios.html">Formulários</a>&nbsp;
+    <a href="audio/audios.html">Audio</a>
+    <a href="video/videos.html">Video</a>
+    <a href="semantico.html">Div e HTML Semântico</a>
+
+    <hr>
+    <h1>Meu primeiro Site</h1><!--Texto principal-->
+    <hr><!--Cria linha-->
+    <h2>Meu primeiro Site</h2><!--Hierarquia-->
+    <h3>Meu primeiro Site</h3><!--de-->
+    <h4>Meu primeiro Site</h4><!--Títulos-->
+    <h5>Meu primeiro Site</h5>
+    <h6>Meu primeiro Site</h6>
+    <p>Meu primeiro parágrafo</p><!--Parágrafo-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+        Nihil corrupti praesentium distinctio tempora illo expedita,<br>
+      aperiam rem voluptatibus facilis esse veritatis accusamus cupiditate<br>
+       exercitationem magnam autem laborum quis culpa neque.</p> <!-- br Faz quebra de linha-->
+    <!--Utiliza-se lorem para gerar um texto de aleatoriedade padráo no parágrafo-->
+    <p><b>NEGRITO</b></p><!--Texto em negrito-->
+    <p><i>Itálico</i></p><!--Texto em itálico-->
+    <p><u>Sublinhado</u></p><!--Texto sublinhado-->
+    <p><small></small></p><!--Texto pequeno-->
+    <p><strong>Negrito porém com importância ao navegador</strong></p>
+    <p><del>Riscado</del></p><!--Texto riscado-->
+    <p><mark>Marcado</mark></p><!--Texto marcado-->
+    <p>2<sup>10</sup></p><!--Texto com subtexto emcima-->
+    <p>2<sub>10</sub></p><!--Texto com subtexto embaixo-->
+    <p>Você conhece uma linguagem chamada <abbr title="HyperText markup language">HTML</abbr></p>
+    <!--abbr title guarda o nome completo e abbr em si guarda a abreviação--> 
+    <adress>Endereço Rua 00, Complemento 00, Bairro: 00</adress><br><br><!--Guarda um endereço-->
+    <cite>Obra generica</cite><!--Citação de uma obra-->
+    <p>Tony Stark disse: <q>Eu sou o Homem de Ferro</q></p><!--a tag q é utilizada para falas de personagens-->
+    <blockquote>Eu sou o Homem de Ferro</blockquote><!--Fala com enfase de personagem-->
+    <bdo dir="rtl">Texto Invertido</bdo><br><!--Right to left, inverte texto-->
+    <a href="#top">Voltar ao topo</a><br>
+    <img src="https://c.tenor.com/9JO3m3Tyj4kAAAAC/jake-adventure-time.gif" width="200" height="150" alt="Jake dançando"><!--width e heigh Redimensiona imagem, alt é legenda-->
+    <!--img src nesse caso utilizando link absoluto-->
+    <table width="100%" border="1" style="text-align:center;"><!--Cria tabela com 100% de largura com borda de 1px e alinha no meio com CSS-->
+        <tr><!--Primeira linha-->
+            <th>Nome</th><!--Itens da Primeira linha Table Header-->
+            <th>Atributos</th>
+            <th>Poderes
+            </th>
+        </tr>
+        <tr>
+            <td>Bianca</td><!--Itens de linhas depois da primeira, Table Data-->
+            <td>Velocidade</td>
+            <td>Superar uma linguagem</td>
+        </tr>
+        <tr>
+            <td>Junior</td>
+            <td>Persistência</td>
+            <td>Criar código e vender</td>
+        </tr>
+    </table>
+
+    <ul><!--Lista Não Ordenada-->
+        <li>Macarrão</li><!--Subitem da lista-->
+        <li>Feijão</li>
+        <li>Arroz</li>
+    </ul>
+    <ol><!--Lista Ordenada-->
+        <li>Macarrão</li><!--Subitem da lista-->
+        <li>Feijão</li>
+        <li>Arroz</li>
+    <iframe src="" width="100%" style="border: none;" name="meu-iframe" title="Iframe do Sobre"></iframe>
+    <!--iframe criam reproduções de links relativos na própria página.-->
+    </ol>
 </body>
 </html>
