@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulário aqui</h1>
+
+    <form>
+        <label for="campo_nome">Nome: </label><!--Mostra ao User do que o input se trata, o for sempre apontando para id quando clica-->
+        <input id="campo_nome" type="text" placeholder="Digite seu nome aqui: " required><br><!--type escolhe o tipo de texto, placeholder é marca d'agua, o que ele tem que fazer-->
+        <label for="campo_sobrenome">Sobrenome: </label><!--Mostra ao User do que o input se trata-->
+        <input id="campo_sobrenome" type="text" placeholder="Digite seu sobrenome aqui: " required><br><!--type escolhe o tipo de texto, placeholder, o que ele tem que fazer-->
+        <label for="campo_email">Email: </label><!--Mostra ao User do que o input se trata-->
+        <input id="campo_email" type="email" placeholder="Digite seu email aqui: " required><br><!--type escolhe o tipo de texto, placeholder, o que ele tem que fazer-->
+        <label for="campo_senha">Senha: </label><!--Mostra ao User do que o input se trata-->
+        <input id="campo_senha" type="password" placeholder="Digite sua senha aqui: " required><br><!--type escolhe o tipo de texto, placeholder, o que ele tem que fazer-->
+        <h1>Animais preferidos</h1>
+        <input type="radio" id="cat" name="animal" value="Gatinho"><!--Na radio é possível escolher apenas uma opção-->
+        <label for="cat">Gatinho</label><br>
+        <input type="radio" id="dog" name="animal" value="Doguinho">
+        <label for="dog">Doguinho</label><br>
+        <input type="radio" id="turtle" name="animal" value="tartaruga">
+        <label for="turtle">Tartaruga</label><br>
+        <h1>O que você tem na sua casa?</h1>
+        <input type="checkbox" id="tv" name="objects" value="Tv"><!--Na checkbox várias opções são válidas-->
+        <label for="tv">Tv</label><br>
+        <input type="checkbox" id="controle" name="objects" value="Controle">
+        <label for="controle">Controle</label><br>
+        <input type="checkbox" id="sofa" name="objects" value="Sofá">
+        <label for="sofa">Sofá</label>
+        <h2>Escolha uma cor</h2>
+        <select>
+            <option selected disabled value="">Selecione uma cor: </option>
+            <option value="verde">Verde</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="vermelho">Vermelho</option>
+        </select>
+        <br>
+        <h2>Texto do usuário: </h2>
+        <textarea required rows="15" cols="35" placeholder="Escreva seu texto aqui"></textarea><!--Aqui o usuario tem a opção de escrever um texto(mensagens mais longas)-->
+        <input type="submit" value="Enviar Formulário">
+    </form>
+    <button>Botão genérico</button><!--Apenas um botão-->
+    <hr>
+    <a href="..">Voltar a página principal</a>
+</body>
+</html>
